@@ -1,20 +1,49 @@
-# Ignore large datasets and model weights
+# ==========================================
+#  Holberton School GAN Project .gitignore
+#  Covers DCGAN (MNIST) and Advanced GAN (CelebA)
+# ==========================================
+
+# --- Large Datasets ---
+advanced_gan/data/celeba/
+dcgan/data/
 *.zip
 *.tar
 *.tar.gz
+*.7z
+*.rar
+
+# --- Model Checkpoints & Weights ---
 *.pt
 *.pth
 *.h5
-*.npy
+*.ckpt
 *.pkl
+*.npy
 
-# Ignore wandb experiment logs
+# --- Experiment Logs ---
 wandb/
+logs/
+runs/
+*.log
 
-# Ignore Python cache and temp files
+# --- Python Cache & Temporary Files ---
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.so
+
+# --- Jupyter & Colab Checkpoints ---
+*.ipynb_checkpoints/
 .ipynb_checkpoints/
+
+# --- IDE & System Files ---
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
+
+# --- Misc ---
+*.swp
+*.bak
+*.tmp
